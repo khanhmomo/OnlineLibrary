@@ -52,3 +52,4 @@ app.use(express.static(path.resolve(__dirname, "./client/build")));
 app.listen(PORT, () =>
 	console.log(`Server ready at http://localhost:4000${server.graphqlPath}`)
 )
+//"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix client -f && npm run build --prefix client"
