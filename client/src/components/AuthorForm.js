@@ -39,7 +39,6 @@ const AuthorForm = () => {
         )
     }
     
-    //GQL operation
 
 
     const[addAuthor, dataMutation] = useMutation(addSingleAuthor)
