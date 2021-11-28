@@ -11,3 +11,5 @@ $npm run dev
 
 Author:
 - Tran An Khanh
+
+*Also thanks to **Henry Web Dev** for a great tutorial*
