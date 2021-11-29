@@ -38,11 +38,20 @@ const app = express()
 app.use(cors())
 server.applyMiddleware({ app })
 
-const PORT = process.env.PORT || 4000
-
 app.use(express.static(path.resolve(__dirname, "./client/build")));
 
+app.get('/api', function (req, res) {
+    res.set('Content-Type', 'application/json');
+    res.send('{"message":"Hello from the custom server!"}');
+});
+
+
+app.get('*', function(request, response) {
+	response.sendFile(path.resolve(__dirname, './client/build', 'index.html'));
+});
+
+const PORT = process.env.PORT || 4000
 app.listen(PORT, () =>
-	console.log(`Server ready at http://localhost:4000${server.graphqlPath}`)
+	console.log(`Server ready at http://localhost:4000`)
 )
 //"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix client -f && npm run build --prefix client"
