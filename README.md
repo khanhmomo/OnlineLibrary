@@ -10,5 +10,8 @@ $npm start
 
 Author:
 - Tran An Khanh
+- Vinh Truong
+- Minh Anh
+- Dang Vu Khoa
 
 *Also thanks to **Henry Web Dev** for a great tutorial*
