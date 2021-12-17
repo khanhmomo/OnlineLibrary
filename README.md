@@ -9,6 +9,7 @@ $npm start
 ```
 
 Author:
+Vi Than Deadline member:
 - Tran An Khanh
 - Vinh Truong
 - Minh Anh
